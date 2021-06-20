@@ -9,7 +9,7 @@ import random
 import threading
 
 ADDR = "0.0.0.0"
-PORT = 8000
+PORT = 6753
 MAX_PLAYERS = 10
 MSG_SIZE = 2048
 
