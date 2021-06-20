@@ -20,7 +20,8 @@ s.listen(MAX_PLAYERS)
 
 players = {}
 
-
+hostname = socket.gethostname()
+local_ip = socket.gethostbyname(hostname)
 def generate_id(player_list: dict, max_players: int):
     """
     Generate a unique identifier
@@ -158,8 +159,7 @@ def main():
 
 
 if __name__ == "__main__":
-    print(ADDR)
-    print(PORT)
+    print(local_ip)
     try:
         main()
     except KeyboardInterrupt:
