@@ -158,6 +158,8 @@ def main():
 
 
 if __name__ == "__main__":
+    print(ADDR)
+    print(PORT)
     try:
         main()
     except KeyboardInterrupt:
