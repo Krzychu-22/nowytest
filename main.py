@@ -7,6 +7,7 @@ import json
 import time
 import random
 import threading
+import keep_alive
 
 ADDR = "0.0.0.0"
 PORT = 6753
@@ -160,6 +161,7 @@ def main():
 
 if __name__ == "__main__":
     print(local_ip)
+    keep_alive.keep_alive()
     try:
         main()
     except KeyboardInterrupt:
